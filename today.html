@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta lang="RU-ru" />
+    <title>Day</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body onload="Load()">
+    <script src='src/main.js'></script>
+    <header>
+        <h1 id='date_title' class='title'>Day of</h1>
+    </header>
+    <div id="unit1" class="unit unit_with_img">
+        <h3 class="unit_item unit_title">Фото дня(Nasa)</h3>
+        <img class="unit_item unit_img" id='unit1_img' />
+        <figcaption class="unit_item" id='unit1_img_text'></figcaption>
+    </div>
+    <div id="unit2" class="unit unit_with_img">
+        <h3 class="unit_item unit_title">Погода</h3>
+        <img id='weather' class="weather_img unit_item" width="500px" height='500px' />
+    </div>
+    <div id="unit4" class="unit unit_text">
+        <h3 class="unit_item unit_title">Время</h3>
+        <p style='font-size: 41px; font-weight: 500;' id="unit4_text" class="unit_item"></p>
+    </div>
+    <div id="unit3" class="unit unit_text">
+        <h3 class="unit_item unit_title">Совет</h3>
+        <p id="unit3_text" class="unit_item"></p>
+    </div>
+    <div id="unit5" class="unit unit_text">
+        <h3 class="unit_item unit_title">Цитата</h3>
+        <p id="quote" class="unit_item quote"></p>
+        <p id='q-author' class="quote_a"></p>
+    </div>
+</body>
+
+</html>

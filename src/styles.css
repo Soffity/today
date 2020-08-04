@@ -1,0 +1,144 @@
+body {
+    background-color: rgb(180, 255, 180);
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div {
+    display: none;
+}
+
+.title {
+    background-color: burlywood;
+    color: black;
+    text-shadow: 3px 3px 3px red;
+    text-align: center;
+    margin-top: initial;
+    font-size: 29px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.quote {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.quote_a {
+    text-align: right;
+    margin-right: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1;
+}
+
+header {
+    border-color: rgb(0, 0, 70);
+    border-top-style: solid;
+    border-top-width: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.unit_img {
+    height: 350px;
+    width: 350px;
+    border-style: outset;
+    border-color: rgb(206, 206, 206);
+    border-top-width: 6px;
+    border-right-width: 6px;
+    border-left-width: 6px;
+    border-bottom-width: 6px;
+}
+
+.unit_text {
+    width: 310px;
+}
+
+.unit_title {
+    font-size: 29px;
+}
+
+.unit_with_img {
+    width: min-content;
+}
+
+.unit {
+    border-width: 7px;
+    border-style: ridge;
+    background-color: lightskyblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: inline-start;
+    margin-left: 10px;
+    margin-top: 10px;
+    animation: 1s slidein;
+}
+
+.unit_item {
+    align-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.weather_img {
+    border-radius: 5px;
+    border-style: groove;
+}
+
+@keyframes slidein {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .unit_img {
+        height: 200px;
+        width: 200px;
+    }
+    .weather_img {
+        height: 250px;
+        width: 250px;
+    }
+    .unit_text {
+        width: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    .unit_img {
+        height: 130px;
+        width: 130px;
+    }
+    .weather_img {
+        height: 130px;
+        width: 130px;
+    }
+    .unit_text {
+        width: 140px;
+    }
+    #unit4_text {
+        letter-spacing: -0.046em;
+    }
+}
+@media (min-width: 700px) and (max-width: 900px) {
+    .unit_img {
+        height: 200px;
+        width: 200px;
+    }
+    .weather_img {
+        height: 200px;
+        width: 200px;
+    }
+    .unit_text {
+        width: 200px;
+    }
+}
