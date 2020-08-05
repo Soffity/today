@@ -113,7 +113,7 @@ header {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .unit_img {
         height: 130px;
         width: 130px;
@@ -129,6 +129,7 @@ header {
         letter-spacing: -0.046em;
     }
 }
+
 @media (min-width: 700px) and (max-width: 900px) {
     .unit_img {
         height: 200px;

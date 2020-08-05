@@ -35,5 +35,5 @@ function Load() {
     }
     setInterval(function() {
         Timer.innerText = new Date().toTimeString().split(' ')[0];
-    }, 900);
+    }, 1000);
 }
