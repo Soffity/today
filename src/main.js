@@ -20,13 +20,12 @@ function Load() {
             u1_img.setAttribute('title', data.url);
             u1_txt.innerText = data.explanation;
      
-    fetch('files/quotes.json').then((response) => {
-        return response.json();
-    }).then((data) => {
+    xhr.open('GET','files/quotes.json', false)
+    xhr.send()
+    data = JSON.parse(xhr.responseText)
         let q = data.list[Math.floor(Math.random() * 1644)];
         quo.innerHTML = q.text;
         quo_a.innerHTML = q.author;
-    });
     for (let index = 0; index < document.getElementsByTagName('div').length; index++) {
         const element = document.getElementsByTagName('div')[index];
         element.style.display = 'block';
